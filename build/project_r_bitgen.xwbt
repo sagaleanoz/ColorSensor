@@ -1,0 +1,7 @@
+INFILE=/home/steven/Escritorio/Sensor/build/project_r.ncd
+OUTFILE=/home/steven/Escritorio/Sensor/build/project_r.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=/home/steven/Escritorio/Sensor/build
+LICENSE=WebPack
+USER_INFO=211225520_0_0_371

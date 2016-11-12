@@ -1,0 +1,510 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "project.src"
+Input Format                       : mixed
+
+---- Target Parameters
+Target Device                      : xc7a100t-1csg324
+Output File Name                   : "project.ngc"
+Output Format                      : NGC
+
+---- Source Options
+Top Module Name                    : Sensor
+
+---- General Options
+Optimization Goal                  : Area
+Optimization Effort                : 1
+RTL Output                         : yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/steven/Escritorio/Sensor/Sensor.v" into library work
+Parsing module <Sensor>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Sensor>.
+WARNING:HDLCompiler:1127 - "/home/steven/Escritorio/Sensor/Sensor.v" Line 111: Assignment to A ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Sensor>.
+    Related source file is "/home/steven/Escritorio/Sensor/Sensor.v".
+    Found 32-bit register for signal <CG>.
+    Found 32-bit register for signal <CB>.
+    Found 32-bit register for signal <CC>.
+    Found 1-bit register for signal <final2>.
+    Found 8-bit register for signal <JA>.
+    Found 1-bit register for signal <final>.
+    Found 2-bit register for signal <filtro>.
+    Found 7-bit register for signal <led>.
+    Found 32-bit register for signal <CR>.
+    Found 32-bit adder for signal <CR[31]_GND_1_o_add_5_OUT> created at line 76.
+    Found 32-bit adder for signal <CB[31]_GND_1_o_add_6_OUT> created at line 81.
+    Found 32-bit adder for signal <CC[31]_GND_1_o_add_7_OUT> created at line 86.
+    Found 32-bit adder for signal <CG[31]_GND_1_o_add_8_OUT> created at line 91.
+    Found 2-bit adder for signal <filtro[1]_GND_1_o_add_31_OUT> created at line 102.
+    Found 4x8-bit Read Only RAM for signal <filtro[1]_GND_1_o_wide_mux_9_OUT>
+    Found 2-bit comparator greater for signal <filtro[1]_PWR_1_o_LessThan_31_o> created at line 99
+    Found 32-bit comparator greater for signal <GND_1_o_CR[31]_LessThan_63_o> created at line 122
+    Found 32-bit comparator greater for signal <CR[31]_GND_1_o_LessThan_64_o> created at line 122
+    Found 32-bit comparator greater for signal <GND_1_o_CB[31]_LessThan_65_o> created at line 122
+    Found 32-bit comparator greater for signal <CB[31]_GND_1_o_LessThan_66_o> created at line 122
+    Found 32-bit comparator greater for signal <GND_1_o_CC[31]_LessThan_67_o> created at line 122
+    Found 32-bit comparator greater for signal <CC[31]_GND_1_o_LessThan_68_o> created at line 122
+    Found 32-bit comparator greater for signal <GND_1_o_CG[31]_LessThan_69_o> created at line 122
+    Found 32-bit comparator greater for signal <CG[31]_GND_1_o_LessThan_70_o> created at line 122
+    Found 32-bit comparator greater for signal <GND_1_o_CR[31]_LessThan_72_o> created at line 124
+    Found 32-bit comparator greater for signal <CR[31]_GND_1_o_LessThan_73_o> created at line 124
+    Found 32-bit comparator greater for signal <GND_1_o_CB[31]_LessThan_74_o> created at line 124
+    Found 32-bit comparator greater for signal <CB[31]_GND_1_o_LessThan_75_o> created at line 124
+    Found 32-bit comparator greater for signal <GND_1_o_CC[31]_LessThan_76_o> created at line 124
+    Found 32-bit comparator greater for signal <CC[31]_GND_1_o_LessThan_77_o> created at line 124
+    Found 32-bit comparator greater for signal <GND_1_o_CG[31]_LessThan_78_o> created at line 124
+    Found 32-bit comparator greater for signal <CG[31]_GND_1_o_LessThan_79_o> created at line 124
+    Found 32-bit comparator greater for signal <GND_1_o_CR[31]_LessThan_81_o> created at line 126
+    Found 32-bit comparator greater for signal <CR[31]_GND_1_o_LessThan_82_o> created at line 126
+    Found 32-bit comparator greater for signal <GND_1_o_CB[31]_LessThan_83_o> created at line 126
+    Found 32-bit comparator greater for signal <CB[31]_GND_1_o_LessThan_84_o> created at line 126
+    Found 32-bit comparator greater for signal <GND_1_o_CC[31]_LessThan_85_o> created at line 126
+    Found 32-bit comparator greater for signal <CC[31]_GND_1_o_LessThan_86_o> created at line 126
+    Found 32-bit comparator greater for signal <CG[31]_GND_1_o_LessThan_88_o> created at line 126
+    Found 32-bit comparator greater for signal <GND_1_o_CR[31]_LessThan_90_o> created at line 128
+    Found 32-bit comparator greater for signal <CR[31]_GND_1_o_LessThan_91_o> created at line 128
+    Found 32-bit comparator greater for signal <GND_1_o_CB[31]_LessThan_92_o> created at line 128
+    Found 32-bit comparator greater for signal <CB[31]_GND_1_o_LessThan_93_o> created at line 128
+    Found 32-bit comparator greater for signal <CC[31]_GND_1_o_LessThan_95_o> created at line 128
+    Found 32-bit comparator greater for signal <GND_1_o_CG[31]_LessThan_96_o> created at line 128
+    Found 32-bit comparator greater for signal <CG[31]_GND_1_o_LessThan_97_o> created at line 128
+    Found 32-bit comparator greater for signal <GND_1_o_CR[31]_LessThan_99_o> created at line 130
+    Found 32-bit comparator greater for signal <CR[31]_GND_1_o_LessThan_100_o> created at line 130
+    Found 32-bit comparator greater for signal <GND_1_o_CB[31]_LessThan_101_o> created at line 130
+    Found 32-bit comparator greater for signal <CB[31]_GND_1_o_LessThan_102_o> created at line 130
+    Found 32-bit comparator greater for signal <GND_1_o_CC[31]_LessThan_103_o> created at line 130
+    Found 32-bit comparator greater for signal <CC[31]_GND_1_o_LessThan_104_o> created at line 130
+    Found 32-bit comparator greater for signal <GND_1_o_CG[31]_LessThan_105_o> created at line 130
+    Found 32-bit comparator greater for signal <CG[31]_GND_1_o_LessThan_106_o> created at line 130
+    Found 32-bit comparator greater for signal <GND_1_o_CR[31]_LessThan_108_o> created at line 132
+    Found 32-bit comparator greater for signal <CR[31]_GND_1_o_LessThan_109_o> created at line 132
+    Found 32-bit comparator greater for signal <GND_1_o_CB[31]_LessThan_110_o> created at line 132
+    Found 32-bit comparator greater for signal <CB[31]_GND_1_o_LessThan_111_o> created at line 132
+    Found 32-bit comparator greater for signal <GND_1_o_CC[31]_LessThan_112_o> created at line 132
+    Found 32-bit comparator greater for signal <GND_1_o_CG[31]_LessThan_114_o> created at line 132
+    Found 32-bit comparator greater for signal <CG[31]_GND_1_o_LessThan_115_o> created at line 132
+    Summary:
+	inferred   1 RAM(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred 147 D-type flip-flop(s).
+	inferred  46 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <Sensor> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x8-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 5
+ 2-bit adder                                           : 1
+ 32-bit adder                                          : 4
+# Registers                                            : 9
+ 1-bit register                                        : 2
+ 2-bit register                                        : 1
+ 32-bit register                                       : 4
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 46
+ 2-bit comparator greater                              : 1
+ 32-bit comparator greater                             : 45
+# Multiplexers                                         : 4
+ 7-bit 2-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Sensor>.
+The following registers are absorbed into counter <CG>: 1 register on signal <CG>.
+The following registers are absorbed into counter <CB>: 1 register on signal <CB>.
+The following registers are absorbed into counter <CC>: 1 register on signal <CC>.
+The following registers are absorbed into counter <CR>: 1 register on signal <CR>.
+The following registers are absorbed into counter <filtro>: 1 register on signal <filtro>.
+INFO:Xst:3226 - The RAM <Mram_filtro[1]_GND_1_o_wide_mux_9_OUT> will be implemented as a BLOCK RAM, absorbing the following register(s): <JA>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <filtro>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <JA>            |          |
+    -----------------------------------------------------------------------
+    | optimization       | area                                |          |
+    -----------------------------------------------------------------------
+Unit <Sensor> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x8-bit single-port block Read Only RAM               : 1
+# Counters                                             : 5
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 4
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+# Comparators                                          : 46
+ 2-bit comparator greater                              : 1
+ 32-bit comparator greater                             : 45
+# Multiplexers                                         : 4
+ 7-bit 2-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch led_0 hinder the constant cleaning in the block Sensor.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <led_6> has a constant value of 0 in block <Sensor>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Sensor> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block Sensor, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 138
+ Flip-Flops                                            : 138
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : project.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1142
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 126
+#      LUT2                        : 45
+#      LUT3                        : 39
+#      LUT4                        : 47
+#      LUT5                        : 335
+#      LUT6                        : 20
+#      MUXCY                       : 394
+#      VCC                         : 1
+#      XORCY                       : 128
+# FlipFlops/Latches                : 138
+#      FD                          : 1
+#      FDE                         : 6
+#      FDR                         : 3
+#      FDRE                        : 128
+# RAMS                             : 1
+#      RAMB18E1                    : 1
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 15
+#      OBUF                        : 15
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             132  out of  126800     0%  
+ Number of Slice LUTs:                  618  out of  63400     0%  
+    Number used as Logic:               618  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    618
+   Number with an unused Flip Flop:     486  out of    618    78%  
+   Number with an unused LUT:             0  out of    618     0%  
+   Number of fully used LUT-FF pairs:   132  out of    618    21%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    210     8%  
+    IOB Flip Flops/Latches:               6
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    135     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+sensor                             | BUFGP                  | 3     |
+final_0                            | NONE(led_0)            | 6     |
+clk                                | BUFGP                  | 130   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+--------------------------------------------+-------+
+Control Signal                     | Buffer(FF name)                            | Load  |
+-----------------------------------+--------------------------------------------+-------+
+led_6_OBUF(XST_GND:G)              | NONE(Mram_filtro[1]_GND_1_o_wide_mux_9_OUT)| 2     |
+-----------------------------------+--------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.952ns (Maximum Frequency: 338.696MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 2.853ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sensor'
+  Clock period: 2.091ns (frequency: 478.240MHz)
+  Total number of paths / destination ports: 9 / 5
+-------------------------------------------------------------------------
+Delay:               2.091ns (Levels of Logic = 1)
+  Source:            filtro_0 (FF)
+  Destination:       filtro_0 (FF)
+  Source Clock:      sensor rising
+  Destination Clock: sensor rising
+
+  Data Path: filtro_0 to filtro_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.478   0.582  filtro_0 (filtro_0)
+     LUT2:I0->O            3   0.124   0.413  filtro[1]_PWR_1_o_LessThan_31_o_inv1 (filtro[1]_PWR_1_o_LessThan_31_o_inv)
+     FDR:R                     0.494          filtro_0
+    ----------------------------------------
+    Total                      2.091ns (1.096ns logic, 0.995ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.952ns (frequency: 338.696MHz)
+  Total number of paths / destination ports: 2371 / 387
+-------------------------------------------------------------------------
+Delay:               2.952ns (Levels of Logic = 33)
+  Source:            CB_0 (FF)
+  Destination:       CB_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: CB_0 to CB_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             7   0.478   0.439  CB_0 (CB_0)
+     INV:I->O              1   0.146   0.000  Mcount_CB_lut<0>_INV_0 (Mcount_CB_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  Mcount_CB_cy<0> (Mcount_CB_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<1> (Mcount_CB_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<2> (Mcount_CB_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<3> (Mcount_CB_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<4> (Mcount_CB_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<5> (Mcount_CB_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<6> (Mcount_CB_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<7> (Mcount_CB_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<8> (Mcount_CB_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<9> (Mcount_CB_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<10> (Mcount_CB_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<11> (Mcount_CB_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<12> (Mcount_CB_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<13> (Mcount_CB_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<14> (Mcount_CB_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<15> (Mcount_CB_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<16> (Mcount_CB_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<17> (Mcount_CB_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<18> (Mcount_CB_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<19> (Mcount_CB_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<20> (Mcount_CB_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<21> (Mcount_CB_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<22> (Mcount_CB_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<23> (Mcount_CB_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<24> (Mcount_CB_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<25> (Mcount_CB_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<26> (Mcount_CB_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<27> (Mcount_CB_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<28> (Mcount_CB_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  Mcount_CB_cy<29> (Mcount_CB_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  Mcount_CB_cy<30> (Mcount_CB_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  Mcount_CB_xor<31> (Result<31>1)
+     FDRE:D                    0.030          CB_31
+    ----------------------------------------
+    Total                      2.952ns (2.513ns logic, 0.439ns route)
+                                       (85.1% logic, 14.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.853ns (Levels of Logic = 1)
+  Source:            Mram_filtro[1]_GND_1_o_wide_mux_9_OUT (RAM)
+  Destination:       JA<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Mram_filtro[1]_GND_1_o_wide_mux_9_OUT to JA<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOADO7    1   2.454   0.399  Mram_filtro[1]_GND_1_o_wide_mux_9_OUT (JA_7_OBUF)
+     OBUF:I->O                 0.000          JA_7_OBUF (JA<7>)
+    ----------------------------------------
+    Total                      2.853ns (2.454ns logic, 0.399ns route)
+                                       (86.0% logic, 14.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'final_0'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              0.877ns (Levels of Logic = 1)
+  Source:            led_5 (FF)
+  Destination:       led<5> (PAD)
+  Source Clock:      final_0 rising
+
+  Data Path: led_5 to led<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.478   0.399  led_5 (led_5)
+     OBUF:I->O                 0.000          led_5_OBUF (led<5>)
+    ----------------------------------------
+    Total                      0.877ns (0.478ns logic, 0.399ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.952|         |         |         |
+sensor         |    2.290|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock final_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.856|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sensor
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sensor         |    2.091|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.67 secs
+ 
+--> 
+
+
+Total memory usage is 510552 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
