@@ -1,4 +1,4 @@
-// BCDtoSSeg_TB.v
+// sensor.v
 `timescale 1ns/1ps
 `define SIMULATION
 
